@@ -13,7 +13,7 @@ Select ONE Additional
 [ no ] Feature 5 - Use .append() method
 -->
 
-
+<!DOCTYPE html>
 <!DOCTYPE html>
 <html>
   <head>
@@ -22,39 +22,51 @@ Select ONE Additional
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <button id="mem1-button">Memory #1</button>
-    <button id="mem2-button">Memory #2</button>
-    <button id="mem3-button">Memory #3</button>
-    <h1>My Top 3 Memories of <span>This Year</span></h1>
+    <button id="mem1-button">Band #1</button>
+    <button id="mem2-button">Band #2</button>
+    <button id="mem3-button">Band #3</button>
+
+    <h1>Top Three <span>Best Bands</span></h1>
+
     <ol>
       <li>
-        <h3 id="mem1">Memory #1</h3>
-        <p>More about this memory.</p>
+        <h3 id="mem1">Led Zeppelin</h3>
+        <p>peak.</p>
+        <img
+          src="https://www.solarnavigator.net/music/music_images/Led_Zeppelin_group_photograph.jpg"
+          width="200"
+        />
       </li>
-
       <li>
-        <h3 id="mem2">Memory #2</h3>
-        <p>More about this memory.</p>
+        <h3 id="mem2">Pink Floyd</h3>
+        <p>peak..</p>
+        <img
+          src="https://i.scdn.co/image/d011c95081cd9a329e506abd7ded47535d524a07"
+          width="200"
+        />
       </li>
-
       <li>
-        <h3 id="mem3">Memory #3</h3>
-        <p>More about this memory</p>
+        <h3 class="mem3">Guns N' Roses</h3>
+        <p>peak...</p>
+        <img
+          src="https://lastfm.freetls.fastly.net/i/u/ar0/ff8a46f7356f516db6d57e23b5c923a8.jpg"
+          width="200"
+        />
       </li>
     </ol>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
       $("#mem1-button").click(function () {
-        $("#mem1").css("color", "purple");
+        $("#mem1").css("color", "#3b00b0");
+        $("p").hide();
       });
-
       $("#mem2-button").click(function () {
-        $("#mem2").css("color", "blue");
+        $("#mem2").css("color", "#e74c3c");
       });
-
       $("#mem3-button").click(function () {
-        $("#mem3").css("color", "green");
+        $(".mem3").css("color", "#27ae60");
+        $(".mem3").append(" 🎸");
       });
     </script>
   </body>
